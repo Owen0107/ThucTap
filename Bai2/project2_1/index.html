@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1 class="app-title">
+                <span class="emoji">📝</span>
+                Todo List
+            </h1>
+            
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="Nhập công việc mới..." class="task-input">
+                <button id="addBtn" class="btn btn-add">
+                    <span>+</span>
+                </button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="active">Đang làm</button>
+                <button class="filter-btn" data-filter="completed">Hoàn thành</button>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">Tổng số:</span>
+                    <span class="stat-value" id="totalTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Đang làm:</span>
+                    <span class="stat-value" id="activeTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Hoàn thành:</span>
+                    <span class="stat-value" id="completedTasks">0</span>
+                </div>
+            </div>
+
+            <ul id="taskList" class="task-list"></ul>
+
+            <div class="empty-state" id="emptyState">
+                <span class="empty-emoji">🎯</span>
+                <p>Chưa có công việc nào!</p>
+                <p class="empty-subtext">Hãy thêm công việc đầu tiên của bạn</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
