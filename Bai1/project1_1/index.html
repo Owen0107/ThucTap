@@ -3,336 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>FinTrack - Professional Financial Management & Investment Tracking App</title>
-    <meta name="description" content="Manage your finances at your fingertips with FinTrack. Track expenses, manage investments, create budgets, and achieve your financial goals with our intuitive platform.">
-    <meta name="keywords" content="financial management, expense tracking, investment portfolio, budgeting tools, finance app, money management">
-    <meta name="author" content="FinTrack">
-    <meta name="robots" content="index, follow">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fintrack.com/">
-    <meta property="og:title" content="FinTrack - Manage Your Finances at Your Fingertips">
-    <meta property="og:description" content="Professional financial tools designed to help you manage money, track investments, and achieve financial goals.">
-    <meta property="og:image" content="https://fintrack.com/og-image.jpg">
-    
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fintrack.com/">
-    <meta property="twitter:title" content="FinTrack - Manage Your Finances at Your Fingertips">
-    <meta property="twitter:description" content="Professional financial tools designed to help you manage money, track investments, and achieve financial goals.">
-    <meta property="twitter:image" content="https://fintrack.com/twitter-image.jpg">
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
+    <title>FinTrack - Manage your finances</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a href="#" class="header__logo" aria-label="FinTrack Home">
-                    <i class="fas fa-chart-line" aria-hidden="true"></i>
-                    <span class="header__logo-text">FinTrack</span>
-                </a>
-                <ul class="header__menu">
-                    <li class="header__menu-item"><a href="#about" class="header__link">About</a></li>
-                    <li class="header__menu-item"><a href="#features" class="header__link">Features</a></li>
-                    <li class="header__menu-item"><a href="#pricing" class="header__link">Pricing</a></li>
-                    <li class="header__menu-item"><a href="#blog" class="header__link">Blog</a></li>
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <div class="logo__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Updated logo with filled layers for better visibility -->
+                        <path d="M20 4L4 12L20 20L36 12L20 4Z" fill="#D4F268" fill-opacity="0.3" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 28L36 20" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 28L20 36L36 28" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="logo__text">FinTrack</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                 </ul>
-                <a href="#cta" class="btn btn--primary">Get Started</a>
-                <button class="header__hamburger" aria-label="Toggle menu" aria-expanded="false">
-                    <span class="header__hamburger-line"></span>
-                    <span class="header__hamburger-line"></span>
-                    <span class="header__hamburger-line"></span>
-                </button>
             </nav>
+            <!-- Updated Sign In button to be outlined style -->
+            <a href="#" class="btn btn--outline">Sign In</a>
         </div>
     </header>
 
-    <section class="hero" id="about">
-        <div class="container">
+    <section class="hero">
+        <div class="container hero__container">
             <div class="hero__content">
-                <div class="hero__text">
-                    <h1 class="hero__title">Manage your finances <span class="hero__title-highlight">at your fingertips</span></h1>
-                    <p class="hero__description">Take control of your financial future with FinTrack. Track expenses, manage investments, and achieve your financial goals with our intuitive platform designed for modern money management.</p>
-                    <div class="hero__actions">
-                        <a href="#cta" class="btn btn--primary btn--large">Start Free Trial</a>
-                        <a href="#features" class="btn btn--outline btn--large">Learn More</a>
+                <h1 class="hero__title">Manage your finances<br>at your fingertips</h1>
+                <p class="hero__description">
+                    FinTrack offers the convenience of managing your finances effortlessly, all from the convenience of your fingertips. Whether it's tracking expenses, monitoring investments, or planning budgets, our intuitive platform empowers you to take control of your financial journey with ease.
+                </p>
+                <div class="hero__actions">
+                    <a href="#" class="btn btn--primary">Sign Up for Free</a>
+                    <a href="#" class="btn btn--outline">Watch Video</a>
+                </div>
+            </div>
+            <!-- Redesigned hero visual section with better card positioning -->
+            <div class="hero__visual">
+                <!-- Visa Card with 3D effect -->
+                <div class="visa-card">
+                    <div class="visa-card__chip">
+                        <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+                            <rect x="0" y="0" width="36" height="28" rx="4" fill="#C9A227"/>
+                            <rect x="0" y="8" width="36" height="4" fill="#B8941F"/>
+                            <rect x="12" y="0" width="4" height="28" fill="#B8941F"/>
+                        </svg>
                     </div>
-                    <div class="hero__partners">
-                        <p class="hero__partners-label">Trusted by leading companies</p>
-                        <div class="hero__partners-list">
-                            <div class="hero__partner-logo" aria-label="CRED">CRED</div>
-                            <div class="hero__partner-logo" aria-label="PayPal">PayPal</div>
-                            <div class="hero__partner-logo" aria-label="Amazon">Amazon</div>
-                            <div class="hero__partner-logo" aria-label="Flipkart">Flipkart</div>
-                            <div class="hero__partner-logo" aria-label="Paytm">Paytm</div>
+                    <div class="visa-card__top">
+                        <span class="visa-card__type">Visa</span>
+                        <span class="visa-card__logo">VISA</span>
+                    </div>
+                    <div class="visa-card__bottom">
+                        <div class="visa-card__info">
+                            <span class="visa-card__label">Transaction</span>
+                            <span class="visa-card__value">73</span>
+                        </div>
+                        <div class="visa-card__info">
+                            <span class="visa-card__label">Total Balance:</span>
+                            <span class="visa-card__value">$74,330</span>
                         </div>
                     </div>
                 </div>
-                <div class="hero__chart">
-                    <div class="chart">
-                        <div class="chart__header">
-                            <h3 class="chart__title">Portfolio Growth</h3>
-                            <span class="chart__value chart__value--positive">+24.5%</span>
+                
+                <!-- Rent/Mortgage Widget -->
+                <div class="rent-widget">
+                    <div class="rent-widget__header">
+                        <span class="rent-widget__title">Rent/Mortgage</span>
+                    </div>
+                    <div class="rent-widget__amount">
+                        15,865<span class="currency">$</span>
+                    </div>
+                    <div class="rent-widget__progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill"></div>
                         </div>
-                        <div class="chart__container">
-                            <canvas id="heroChart" class="chart__canvas" aria-label="Portfolio growth chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart Widget -->
+                <div class="chart-widget">
+                    <div class="chart-widget__header">
+                        <div class="chart-widget__controls">
+                            <span class="control-pill">Total Earning <i class="fas fa-chevron-down"></i></span>
+                            <span class="control-pill">Monthly <i class="fas fa-chevron-down"></i></span>
                         </div>
-                        <div class="chart__stats">
-                            <div class="chart__stat">
-                                <span class="chart__stat-label">Total Balance</span>
-                                <span class="chart__stat-value">$45,250</span>
+                    </div>
+                    <div class="chart-widget__body">
+                        <div class="chart-widget__y-axis">
+                            <span>140k</span>
+                            <span>120k</span>
+                            <span>100k</span>
+                            <span>80k</span>
+                            <span>60k</span>
+                            <span>40k</span>
+                            <span>20k</span>
+                            <span>0k</span>
+                        </div>
+                        <div class="chart-widget__graph-area">
+                            <svg viewBox="0 0 400 200" class="chart-line" preserveAspectRatio="none">
+                                <path d="M0,180 C40,150 60,100 100,100 S140,180 180,180 S220,80 260,80 S320,150 360,150 S390,30 400,30" fill="none" stroke="#D4F268" stroke-width="3"/>
+                                <circle cx="260" cy="80" r="8" fill="#0A0A0A" stroke="#D4F268" stroke-width="3" />
+                            </svg>
+                            
+                            <div class="chart-tooltip">
+                                <div class="chart-tooltip__date">18 June 2022</div>
+                                <div class="chart-tooltip__value">$ 78,560</div>
                             </div>
-                            <div class="chart__stat">
-                                <span class="chart__stat-label">This Month</span>
-                                <span class="chart__stat-value chart__stat-value--positive">+$3,420</span>
-                            </div>
                         </div>
+                    </div>
+                    <div class="chart-widget__x-axis">
+                        <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container partners__container">
+            <div class="partner-logo"><i class="fab fa-cuttlefish"></i> CRED</div>
+            <div class="partner-logo"><i class="fab fa-paypal"></i> PayPal</div>
+            <div class="partner-logo"><i class="fab fa-amazon"></i> amazon</div>
+            <div class="partner-logo">Flipkart</div>
+            <div class="partner-logo">Paytm</div>
         </div>
     </section>
 
     <section class="features" id="features">
         <div class="container">
-            <div class="features__header">
-                <h2 class="features__title">Powerful Features for <span class="features__title-highlight">Smart Finance</span></h2>
-                <p class="features__description">Everything you need to manage, track, and grow your wealth in one place</p>
-            </div>
+            <h2 class="section-title">Our Features</h2>
+            
             <div class="features__grid">
-                <article class="features__card">
-                    <div class="features__icon">
-                        <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                <div class="feature-card feature-card--large">
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title">Investment-Like Expense Tracking</h3>
+                        <p class="feature-card__desc">Easily monitor your spending habits with detailed categorization and analysis, empowering you to make informed financial decisions and stay within your budget.</p>
                     </div>
-                    <h3 class="features__card-title">Investment-Like Expense Tracking</h3>
-                    <p class="features__card-description">Track your expenses with the precision of investment analytics. Get detailed insights into where your money goes and optimize your spending habits.</p>
-                </article>
-                <article class="features__card">
-                    <div class="features__icon">
-                        <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                    <div class="feature-card__visual">
+                        <div class="candlestick-chart">
+                            <div class="candlestick-chart__main">
+                                <div class="candlestick-chart__y-axis">
+                                    <span>$280</span>
+                                    <span>$260</span>
+                                    <span>$240</span>
+                                    <span>$220</span>
+                                    <span>$200</span>
+                                </div>
+                                <div class="candlestick-chart__grid">
+                                    <div class="chart-dashed-line" style="top: 45%;"></div>
+                                    <div class="candle-tooltip-container" style="top: 45%; left: 45%;">
+                                        <div class="candle-tooltip-pill">$244.21</div>
+                                    </div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle blue" style="height: 30px; bottom: 20px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 40px; bottom: 40px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle blue" style="height: 20px; bottom: 60px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 25px; bottom: 35px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 35px; bottom: 25px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 60px; bottom: 50px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 20px; bottom: 70px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 70px; bottom: 60px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle blue" style="height: 30px; bottom: 90px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle blue" style="height: 35px; bottom: 85px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 30px; bottom: 55px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 25px; bottom: 50px;"></div></div>
+                                    <div class="chart-col"><div class="grid-line"></div><div class="candle lime" style="height: 65px; bottom: 80px;"></div></div>
+                                </div>
+                            </div>
+                            <div class="candlestick-chart__x-axis">
+                                <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                            </div>
+                            <div class="candlestick-chart__timeframe">
+                                <span>12H</span>
+                                <span>1D</span>
+                                <span class="active">1W</span>
+                                <span>1M</span>
+                                <span>1Y</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="features__card-title">Customizable Budgeting Tools</h3>
-                    <p class="features__card-description">Create personalized budgets that adapt to your lifestyle. Set limits, track progress, and receive alerts when you're close to your budget limits.</p>
-                </article>
-                <article class="features__card">
-                    <div class="features__icon">
-                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                </div>
+
+                <div class="feature-card">
+                    <h3 class="feature-card__title">Customizable Budgeting Tools</h3>
+                    <p class="feature-card__desc">Tailor your budget to your unique financial goals with customizable categories, spending limits, and alerts, ensuring that you stay on track and achieve your desired outcomes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3 class="feature-card__title">Investment Portfolio Management</h3>
+                    <p class="feature-card__desc">Take charge of your investments with our portfolio tracker, giving real-time updates, and personalized insights to optimize your strategy and maximize returns.</p>
+                </div>
+
+                <div class="feature-card feature-card--large feature-card--reverse">
+                    <div class="feature-card__visual">
+                        <div class="assets-chart">
+                            <div class="assets-header">
+                                <span>Assets</span>
+                            </div>
+                            <div class="assets-balance">
+                                <span class="balance-amount">$25,901.0.41</span>
+                                <span class="balance-change">▲ 810%</span>
+                            </div>
+                            <div class="assets-graph">
+                                <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+                                    <path d="M0,100 L0,80 C50,80 100,60 150,40 C200,20 250,10 300,0 L300,100 Z" fill="url(#gradient)" opacity="0.5"/>
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#D4F268;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#D4F268;stop-opacity:0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="features__card-title">Investment Portfolio Management</h3>
-                    <p class="features__card-description">Manage all your investments in one dashboard. Track stocks, crypto, mutual funds, and more with real-time updates and performance analytics.</p>
-                </article>
-                <article class="features__card">
-                    <div class="features__icon">
-                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title">Enjoy risk free investments!</h3>
+                        <p class="feature-card__desc">Our guiding principle is simple: We do what's best for you. We prioritize your financial well-being above all else. With our unwavering commitment to your success, trust FinTrack to be your steadfast partner on your journey towards financial empowerment.</p>
                     </div>
-                    <h3 class="features__card-title">Enjoy Risk-Free Investments</h3>
-                    <p class="features__card-description">Access low-risk investment options with guaranteed returns. Perfect for beginners looking to grow their wealth safely and steadily.</p>
-                </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="faq__header">
-                <h2 class="faq__title">Frequently Asked <span class="faq__title-highlight">Questions</span></h2>
-                <p class="faq__description">Got questions? We've got answers</p>
+    <section class="faq">
+        <div class="container faq__container">
+            <div class="faq__content">
+                <h2 class="section-title section-title--left">FAQ's</h2>
+                <div class="accordion">
+                    <div class="accordion__item accordion__item--active">
+                        <button class="accordion__header">
+                            How secure is my financial data on FinTrack?
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Your financial data's security is paramount at FinTrack. We employ advanced encryption protocols and stringent security measures to safeguard your information. Rest assured, your data is protected with the highest levels of security.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            Can I link multiple bank accounts and cards to my account?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            Is FinTrack accessible on mobile devices?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            Does FinTrack offer support for investment management?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="faq__list">
-                <article class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span class="faq__question-text">How secure is my financial data with FinTrack?</span>
-                        <i class="fas fa-chevron-down faq__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq__answer">
-                        <p class="faq__answer-text">Your security is our top priority. We use bank-level 256-bit encryption, two-factor authentication, and regular security audits to ensure your financial data remains completely safe and private.</p>
-                    </div>
-                </article>
-                <article class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span class="faq__question-text">Can I connect multiple bank accounts?</span>
-                        <i class="fas fa-chevron-down faq__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq__answer">
-                        <p class="faq__answer-text">Yes! FinTrack supports connections to over 10,000 financial institutions worldwide. You can link multiple bank accounts, credit cards, and investment accounts all in one place.</p>
-                    </div>
-                </article>
-                <article class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span class="faq__question-text">Is there a free trial available?</span>
-                        <i class="fas fa-chevron-down faq__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq__answer">
-                        <p class="faq__answer-text">Absolutely! We offer a 14-day free trial with full access to all premium features. No credit card required to start your trial.</p>
-                    </div>
-                </article>
-                <article class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span class="faq__question-text">What platforms is FinTrack available on?</span>
-                        <i class="fas fa-chevron-down faq__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq__answer">
-                        <p class="faq__answer-text">FinTrack is available on iOS, Android, and web browsers. Your data syncs seamlessly across all devices, so you can manage your finances anytime, anywhere.</p>
-                    </div>
-                </article>
-                <article class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span class="faq__question-text">How do I cancel my subscription?</span>
-                        <i class="fas fa-chevron-down faq__icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq__answer">
-                        <p class="faq__answer-text">You can cancel your subscription anytime from your account settings. There are no cancellation fees, and you'll continue to have access until the end of your billing period.</p>
-                    </div>
-                </article>
+            <div class="faq__visual">
+                <div class="faq-card">
+                    <div class="faq-question-mark">?</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials">
         <div class="container">
-            <div class="testimonials__header">
-                <h2 class="testimonials__title">What Our <span class="testimonials__title-highlight">Users Say</span></h2>
-                <p class="testimonials__description">Join thousands of satisfied users who transformed their financial lives</p>
-            </div>
+            <h2 class="section-title">What our users say</h2>
             <div class="testimonials__grid">
-                <article class="testimonials__card">
-                    <div class="testimonials__content">
-                        <div class="testimonials__stars">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <p class="testimonials__text">"FinTrack completely changed how I manage my money. The expense tracking feature helped me save over $500 in just the first month!"</p>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"FinTrack revolutionized how I manage my finances, making it effortless to track expenses and plan budgets."</p>
+                    <div class="testimonial-author">
+                        <span>- Sarah Jhon</span>
+                        <i class="fas fa-quote-right"></i>
                     </div>
-                    <div class="testimonials__author">
-                        <div class="testimonials__avatar" aria-label="Sarah Kim">SK</div>
-                        <div class="testimonials__author-info">
-                            <h4 class="testimonials__author-name">Sarah Kim</h4>
-                            <span class="testimonials__author-role">Marketing Manager</span>
-                        </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Finally, a finance tool that simplifies everything! FinTrack is intuitive, comprehensive, and user-friendly."</p>
+                    <div class="testimonial-author">
+                        <span>- Michael Randolph</span>
+                        <i class="fas fa-quote-right"></i>
                     </div>
-                </article>
-                <article class="testimonials__card">
-                    <div class="testimonials__content">
-                        <div class="testimonials__stars">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <p class="testimonials__text">"The investment portfolio feature is incredible. I can now see all my investments in one place and make smarter decisions."</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"With FinTrack, I feel more in control of my money than ever before. It's like having a personal finance assistant in my pocket."</p>
+                    <div class="testimonial-author">
+                        <span>- Emily Ken</span>
+                        <i class="fas fa-quote-right"></i>
                     </div>
-                    <div class="testimonials__author">
-                        <div class="testimonials__avatar" aria-label="Michael Rodriguez">MR</div>
-                        <div class="testimonials__author-info">
-                            <h4 class="testimonials__author-name">Michael Rodriguez</h4>
-                            <span class="testimonials__author-role">Software Engineer</span>
-                        </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've tried many finance apps, but FinTrack stands out for its reliability and ease of use. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <span>- David Parker</span>
+                        <i class="fas fa-quote-right"></i>
                     </div>
-                </article>
-                <article class="testimonials__card">
-                    <div class="testimonials__content">
-                        <div class="testimonials__stars">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <p class="testimonials__text">"I've tried many finance apps, but FinTrack is by far the best. The budgeting tools are so intuitive and actually work!"</p>
-                    </div>
-                    <div class="testimonials__author">
-                        <div class="testimonials__avatar" aria-label="Emily Parker">EP</div>
-                        <div class="testimonials__author-info">
-                            <h4 class="testimonials__author-name">Emily Parker</h4>
-                            <span class="testimonials__author-role">Freelance Designer</span>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta" id="cta">
+    <section class="cta">
         <div class="container">
-            <div class="cta__content">
-                <h2 class="cta__title">Join the Trust of <span class="cta__title-highlight">450K+</span> Users</h2>
-                <p class="cta__description">Sign up today and take the first step towards financial freedom. Start your free trial now!</p>
-                <form class="cta__form" id="signupForm">
-                    <div class="cta__form-group">
-                        <input type="email" class="cta__input" placeholder="Enter your email address" required aria-label="Email address">
-                        <button type="submit" class="btn btn--primary">Sign Up Free</button>
-                    </div>
-                </form>
-                <p class="cta__note">No credit card required • 14-day free trial • Cancel anytime</p>
-            </div>
+            <h2 class="cta__title">Start your financial journey with FinTrack!</h2>
+            <a href="#" class="btn btn--primary btn--large">Sign Up for Free</a>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__grid">
+            <div class="footer__top">
                 <div class="footer__brand">
-                    <a href="#" class="footer__logo" aria-label="FinTrack Home">
-                        <i class="fas fa-chart-line" aria-hidden="true"></i>
-                        <span class="footer__logo-text">FinTrack</span>
+                    <a href="#" class="logo">
+                        <div class="logo__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4L4 12L20 20L36 12L20 4Z" fill="#D4F268" fill-opacity="0.3" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 20L20 28L36 20" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 28L20 36L36 28" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="logo__text">FinTrack</span>
                     </a>
-                    <p class="footer__description">Your trusted partner in financial management. Making smart money decisions accessible to everyone.</p>
-                    <div class="footer__social">
-                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <p class="footer__desc">Experience the convenience of managing your finances effortlessly, all from your fingertips.</p>
+                </div>
+                <div class="footer__links-group">
+                    <div class="footer__col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Budgeting</a></li>
+                            <li><a href="#">Investments</a></li>
+                            <li><a href="#">Analytics</a></li>
+                            <li><a href="#">Reports</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__links-title">Quick Menu</h4>
-                    <ul class="footer__links-list">
-                        <li class="footer__links-item"><a href="#about" class="footer__link">About Us</a></li>
-                        <li class="footer__links-item"><a href="#features" class="footer__link">Features</a></li>
-                        <li class="footer__links-item"><a href="#pricing" class="footer__link">Pricing</a></li>
-                        <li class="footer__links-item"><a href="#testimonials" class="footer__link">Testimonials</a></li>
-                        <li class="footer__links-item"><a href="#faq" class="footer__link">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__links-title">Resources</h4>
-                    <ul class="footer__links-list">
-                        <li class="footer__links-item"><a href="#" class="footer__link">Blog</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Help Center</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Documentation</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">API Reference</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Community</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__links-title">Legal</h4>
-                    <ul class="footer__links-list">
-                        <li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Terms of Service</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Cookie Policy</a></li>
-                        <li class="footer__links-item"><a href="#" class="footer__link">Security</a></li>
-                    </ul>
+                    <div class="footer__col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 FinTrack. All rights reserved.</p>
+                <span>© 2025 FinTrack. All rights reserved.</span>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
