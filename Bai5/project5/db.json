@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Nguyen Van A",
+      "email": "vana@example.com",
+      "major": "Information Technology",
+      "gpa": 3.5
+    },
+    {
+      "id": "2",
+      "name": "Tran Thi B",
+      "email": "thib@example.com",
+      "major": "Marketing",
+      "gpa": 3.2
+    },
+    {
+      "id": "3",
+      "name": "Le Van C",
+      "email": "vanc@example.com",
+      "major": "Graphic Design",
+      "gpa": 3.8
+    }
+  ]
+}
