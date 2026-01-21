@@ -13,8 +13,7 @@
         <div class="container header__container">
             <a href="#" class="logo">
                 <div class="logo__icon">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Updated logo with filled layers for better visibility -->
+                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 4L4 12L20 20L36 12L20 4Z" fill="#D4F268" fill-opacity="0.3" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M4 20L20 28L36 20" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M4 28L20 36L36 28" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -30,8 +29,7 @@
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                 </ul>
             </nav>
-            <!-- Updated Sign In button to be outlined style -->
-            <a href="#" class="btn btn--outline">Sign In</a>
+            <a href="#" class="btn btn--outline btn--sm">Sign In</a>
         </div>
     </header>
 
@@ -47,9 +45,7 @@
                     <a href="#" class="btn btn--outline">Watch Video</a>
                 </div>
             </div>
-            <!-- Redesigned hero visual section with better card positioning -->
             <div class="hero__visual">
-                <!-- Visa Card with 3D effect -->
                 <div class="visa-card">
                     <div class="visa-card__chip">
                         <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
@@ -74,7 +70,6 @@
                     </div>
                 </div>
                 
-                <!-- Rent/Mortgage Widget -->
                 <div class="rent-widget">
                     <div class="rent-widget__header">
                         <span class="rent-widget__title">Rent/Mortgage</span>
@@ -89,7 +84,6 @@
                     </div>
                 </div>
 
-                <!-- Chart Widget -->
                 <div class="chart-widget">
                     <div class="chart-widget__header">
                         <div class="chart-widget__controls">
@@ -113,7 +107,6 @@
                                 <path d="M0,180 C40,150 60,100 100,100 S140,180 180,180 S220,80 260,80 S320,150 360,150 S390,30 400,30" fill="none" stroke="#D4F268" stroke-width="3"/>
                                 <circle cx="260" cy="80" r="8" fill="#0A0A0A" stroke="#D4F268" stroke-width="3" />
                             </svg>
-                            
                             <div class="chart-tooltip">
                                 <div class="chart-tooltip__date">18 June 2022</div>
                                 <div class="chart-tooltip__value">$ 78,560</div>
@@ -129,12 +122,28 @@
     </section>
 
     <section class="partners">
-        <div class="container partners__container">
-            <div class="partner-logo"><i class="fab fa-cuttlefish"></i> CRED</div>
-            <div class="partner-logo"><i class="fab fa-paypal"></i> PayPal</div>
-            <div class="partner-logo"><i class="fab fa-amazon"></i> amazon</div>
-            <div class="partner-logo">Flipkart</div>
-            <div class="partner-logo">Paytm</div>
+        <div class="container">
+            <p class="partners__title">Over 40K+ companies have collaborated with us</p>
+            <div class="partners__logos">
+                <div class="partner-logo">
+                    <span class="partner-logo__icon">◈</span>
+                    <span>CRED</span>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-amazon"></i>
+                    <span>amazon</span>
+                </div>
+                <div class="partner-logo">
+                    <span class="partner-logo__flipkart">Flipkart</span>
+                </div>
+                <div class="partner-logo">
+                    <span class="partner-logo__paytm">paytm</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -208,19 +217,24 @@
                             <div class="assets-header">
                                 <span>Assets</span>
                             </div>
+                            <div class="assets-info">
+                                <span class="assets-label">Your total balance</span>
+                            </div>
                             <div class="assets-balance">
-                                <span class="balance-amount">$25,901.0.41</span>
+                                <span class="balance-amount">$25,001.0<span class="balance-cents">.41</span></span>
                                 <span class="balance-change">▲ 810%</span>
                             </div>
+                            <div class="assets-period">MARCH</div>
                             <div class="assets-graph">
                                 <svg viewBox="0 0 300 100" preserveAspectRatio="none">
-                                    <path d="M0,100 L0,80 C50,80 100,60 150,40 C200,20 250,10 300,0 L300,100 Z" fill="url(#gradient)" opacity="0.5"/>
                                     <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#D4F268;stop-opacity:1" />
+                                        <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#D4F268;stop-opacity:0.6" />
                                             <stop offset="100%" style="stop-color:#D4F268;stop-opacity:0" />
                                         </linearGradient>
                                     </defs>
+                                    <path d="M0,100 L0,70 C30,65 60,60 90,50 C120,40 150,35 180,30 C210,25 240,20 270,15 L300,10 L300,100 Z" fill="url(#areaGradient)"/>
+                                    <path d="M0,70 C30,65 60,60 90,50 C120,40 150,35 180,30 C210,25 240,20 270,15 L300,10" fill="none" stroke="#D4F268" stroke-width="2"/>
                                 </svg>
                             </div>
                         </div>
@@ -283,29 +297,43 @@
                 <div class="testimonial-card">
                     <p class="testimonial-text">"FinTrack revolutionized how I manage my finances, making it effortless to track expenses and plan budgets."</p>
                     <div class="testimonial-author">
-                        <span>- Sarah Jhon</span>
-                        <i class="fas fa-quote-right"></i>
+                        <span class="testimonial-author__name">- Sarah Jhon</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p class="testimonial-text">"Finally, a finance tool that simplifies everything! FinTrack is intuitive, comprehensive, and user-friendly."</p>
                     <div class="testimonial-author">
-                        <span>- Michael Randolph</span>
-                        <i class="fas fa-quote-right"></i>
+                        <span class="testimonial-author__name">- Michael Randolph</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p class="testimonial-text">"With FinTrack, I feel more in control of my money than ever before. It's like having a personal finance assistant in my pocket."</p>
                     <div class="testimonial-author">
-                        <span>- Emily Ken</span>
-                        <i class="fas fa-quote-right"></i>
+                        <span class="testimonial-author__name">- Emily Ken</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p class="testimonial-text">"I've tried many finance apps, but FinTrack stands out for its reliability and ease of use. Highly recommended!"</p>
                     <div class="testimonial-author">
-                        <span>- David Parker</span>
-                        <i class="fas fa-quote-right"></i>
+                        <span class="testimonial-author__name">- Alex Holt</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a busy professional, FinTrack is a lifesaver. It helps me organize and on top of my finances effortlessly."</p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-author__name">- David Luther</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"FinTrack has helped me achieve my financial goals faster by providing valuable insights and tools. Truly indispensable!"</p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-author__name">- Jessica Mary</span>
+                        <span class="testimonial-quote"><i class="fas fa-quote-right"></i></span>
                     </div>
                 </div>
             </div>
@@ -314,8 +342,8 @@
 
     <section class="cta">
         <div class="container">
-            <h2 class="cta__title">Start your financial journey with FinTrack!</h2>
-            <a href="#" class="btn btn--primary btn--large">Sign Up for Free</a>
+            <h2 class="cta__title">Join the trust of 150K+ users,<br>Sign up today</h2>
+            <a href="#" class="btn btn--primary">Get Started</a>
         </div>
     </section>
 
@@ -325,7 +353,7 @@
                 <div class="footer__brand">
                     <a href="#" class="logo">
                         <div class="logo__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 4L4 12L20 20L36 12L20 4Z" fill="#D4F268" fill-opacity="0.3" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M4 20L20 28L36 20" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M4 28L20 36L36 28" stroke="#D4F268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -333,44 +361,35 @@
                         </div>
                         <span class="logo__text">FinTrack</span>
                     </a>
-                    <p class="footer__desc">Experience the convenience of managing your finances effortlessly, all from your fingertips.</p>
+                    <p class="footer__desc">We strive to be the go-to platform for comprehensive and accessible financial management, helping our users achieve their goals and attain financial freedom. Through innovation and dedication, we aim to revolutionize the way people interact with their finances, making financial success attainable for all.</p>
                 </div>
                 <div class="footer__links-group">
                     <div class="footer__col">
-                        <h4>Services</h4>
+                        <h4>Quick Menu</h4>
                         <ul>
-                            <li><a href="#">Budgeting</a></li>
-                            <li><a href="#">Investments</a></li>
-                            <li><a href="#">Analytics</a></li>
-                            <li><a href="#">Reports</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
                         <h4>Resources</h4>
                         <ul>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Newsletter</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">API</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <span>© 2025 FinTrack. All rights reserved.</span>
+                <span>© 2025 FinTrack. All Rights Reserved.</span>
                 <div class="footer__social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>

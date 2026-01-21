@@ -1,435 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- SEO Meta Tags -->
-    <title>Works - Professional Financial Services Landing Page | Modern Finance Tools</title>
-    <meta name="description" content="Discover professional financial tools designed to help you manage your money, track investments, and achieve your financial goals with ease and confidence.">
-    <meta name="keywords" content="financial services, finance landing page, professional tools, money management, investment tracking, financial dashboard">
-    <meta name="author" content="Works">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://works.com/">
-    <meta property="og:title" content="Works - Professional Financial Services">
-    <meta property="og:description" content="Professional financial tools designed to help you manage your money, track investments, and achieve your financial goals.">
-    <meta property="og:image" content="https://works.com/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://works.com/">
-    <meta property="twitter:title" content="Works - Professional Financial Services">
-    <meta property="twitter:description" content="Professional financial tools designed to help you manage your money, track investments, and achieve your financial goals.">
-    <meta property="twitter:image" content="https://works.com/twitter-image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    <!-- Stylesheets -->
+    <title>Finasafe - All your finance stuff in one place</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">
-                    <span class="logo__text">works</span>
+                    <span class="logo-icon">●</span>
+                    <span class="logo-text">Finasafe</span>
                 </a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="#overview" class="navbar__link">Overview</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#prices" class="navbar__link">Prices</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#stories" class="navbar__link">Stories</a>
-                    </li>
+                <ul class="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">Why Us</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
                 </ul>
-                <button class="header__login" aria-label="Login">
-                    <i class="fas fa-user-circle"></i>
-                </button>
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
+                <div class="nav-right">
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <span class="lang">EN</span>
+                    <a href="#" class="btn btn-primary">Log in</a>
+                </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main">
-        <div class="container">
-            <div class="hero-section" id="overview">
-                <!-- Left Content -->
-                <div class="hero-section__content">
-                    <div class="hero-section__text">
-                        <h1 class="hero-section__title">Financial Landing Page</h1>
-                        <p class="hero-section__subtitle">
-                            Professional financial tools designed to help you manage your money, 
-                            track investments, and achieve your financial goals with ease and confidence.
-                        </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-dashboard">
+                    <div class="dashboard-card main-card">
+                        <div class="card-header">
+                            <span class="card-title">Saved</span>
+                            <span class="card-badge">+2.35%</span>
+                        </div>
+                        <div class="card-amount">$823.00</div>
+                        <div class="mini-chart">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar active" style="height: 100%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                        </div>
                     </div>
-
-                    <!-- Feature Cards -->
-                    <div class="features">
-                        <div class="feature-card">
-                            <div class="feature-card__icon">
-                                <i class="fas fa-cubes"></i>
-                            </div>
-                            <h3 class="feature-card__title">Components</h3>
-                            <p class="feature-card__description">
-                                Modular and reusable financial components for seamless integration
-                            </p>
+                    <div class="dashboard-card balance-card">
+                        <div class="balance-label">My Balance</div>
+                        <div class="balance-amount">$80,000.00</div>
+                        <div class="balance-info">
+                            <span class="income"><i class="fas fa-arrow-up"></i> Income</span>
+                            <span class="expense"><i class="fas fa-arrow-down"></i> Outcome</span>
                         </div>
-
-                        <div class="feature-card">
-                            <div class="feature-card__icon">
-                                <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="dashboard-card chart-card">
+                        <div class="chart-bars">
+                            <div class="chart-bar">
+                                <div class="bar-fill" style="height: 50%"></div>
+                                <span>Jan</span>
                             </div>
-                            <h3 class="feature-card__title">Color Styles</h3>
-                            <p class="feature-card__description">
-                                Modern color scheme with perfect contrast and accessibility
-                            </p>
+                            <div class="chart-bar">
+                                <div class="bar-fill" style="height: 70%"></div>
+                                <span>Feb</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-fill" style="height: 85%"></div>
+                                <span>Mar</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-fill active" style="height: 100%"></div>
+                                <span>Apr</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-fill" style="height: 60%"></div>
+                                <span>May</span>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-fill" style="height: 45%"></div>
+                                <span>Jun</span>
+                            </div>
                         </div>
-
-                        <div class="feature-card">
-                            <div class="feature-card__icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3 class="feature-card__title">Mobile Responsive</h3>
-                            <p class="feature-card__description">
-                                Fully responsive design that works perfectly on all devices
-                            </p>
+                    </div>
+                    <div class="dashboard-card stats-card">
+                        <div class="stat-item">
+                            <span class="stat-label">This Month</span>
+                            <span class="stat-value positive">+$2,500</span>
                         </div>
                     </div>
                 </div>
+                <div class="hero-content">
+                    <h1>All your finance stuff in one place</h1>
+                    <p>Now it easy to get control of your finances, stay on top of your money with the app designed for all your finance stuff in one place. Never worry about your taxes again!</p>
+                    <a href="#" class="btn btn-dark btn-lg">Get Started</a>
+                </div>
+            </div>
+        </section>
 
-                <!-- Right Side - Dashboard Mockups -->
-                <div class="hero-section__mockups">
-                    <div class="mockup-grid">
-                        <!-- Large Card 1 -->
-                        <div class="dashboard-card dashboard-card--large dashboard-card--animate-1">
-                            <div class="dashboard-card__header">
-                                <h3 class="dashboard-card__title">Get organize all of your finances</h3>
-                                <button class="dashboard-card__action" aria-label="More options">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                            </div>
-                            <div class="dashboard-card__content">
-                                <div class="balance">
-                                    <span class="balance__label">Total Balance</span>
-                                    <span class="balance__amount">$625.00</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-bar__fill" style="width: 75%"></div>
-                                </div>
-                                <div class="dashboard-card__stats">
-                                    <div class="stat">
-                                        <span class="stat__label">Income</span>
-                                        <span class="stat__value stat__value--positive">+$1,250</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat__label">Expenses</span>
-                                        <span class="stat__value stat__value--negative">-$625</span>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="organize-section" id="features">
+            <div class="container">
+                <div class="organize-grid">
+                    <div class="organize-content">
+                        <span class="section-tag">ORGANIZE FINANCE</span>
+                        <h2>Get organize all of your finances</h2>
+                        <p>Spending, bills, and subscriptions included. You can also connect your bank accounts and use the app to send money to friends and family, and receive money from anyone in the world.</p>
+                        <a href="#" class="link-arrow">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="organize-card">
+                        <div class="card-header-row">
+                            <span class="card-tag">Total Balance</span>
                         </div>
-
-                        <!-- Chart Card -->
-                        <div class="dashboard-card dashboard-card--chart dashboard-card--animate-2">
-                            <div class="dashboard-card__header">
-                                <h3 class="dashboard-card__title">All your finance stuff in one place</h3>
-                            </div>
-                            <div class="dashboard-card__content">
-                                <div class="chart-wrapper">
-                                    <canvas id="financeChart" class="chart-canvas"></canvas>
-                                </div>
-                                <div class="chart-legend">
-                                    <div class="chart-legend__item">
-                                        <span class="chart-legend__dot chart-legend__dot--primary"></span>
-                                        <span class="chart-legend__label">Revenue</span>
-                                    </div>
-                                    <div class="chart-legend__item">
-                                        <span class="chart-legend__dot chart-legend__dot--secondary"></span>
-                                        <span class="chart-legend__label">Expenses</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="balance-display">
+                            <span class="currency">$</span>
+                            <span class="amount">625,00</span>
                         </div>
-
-                        <!-- Bar Chart Card -->
-                        <div class="dashboard-card dashboard-card--analytics dashboard-card--animate-3">
-                            <div class="dashboard-card__header">
-                                <h3 class="dashboard-card__title">Financial Dashboard</h3>
-                                <div class="dashboard-card__period">
-                                    <span>This Month</span>
-                                </div>
-                            </div>
-                            <div class="dashboard-card__content">
-                                <div class="bar-chart">
-                                    <div class="bar-chart__item">
-                                        <div class="bar-chart__bar" style="height: 60%"></div>
-                                        <span class="bar-chart__label">Mon</span>
-                                    </div>
-                                    <div class="bar-chart__item">
-                                        <div class="bar-chart__bar" style="height: 80%"></div>
-                                        <span class="bar-chart__label">Tue</span>
-                                    </div>
-                                    <div class="bar-chart__item">
-                                        <div class="bar-chart__bar" style="height: 45%"></div>
-                                        <span class="bar-chart__label">Wed</span>
-                                    </div>
-                                    <div class="bar-chart__item">
-                                        <div class="bar-chart__bar" style="height: 90%"></div>
-                                        <span class="bar-chart__label">Thu</span>
-                                    </div>
-                                    <div class="bar-chart__item">
-                                        <div class="bar-chart__bar" style="height: 70%"></div>
-                                        <span class="bar-chart__label">Fri</span>
-                                    </div>
-                                </div>
-                                <div class="analytics-summary">
-                                    <div class="analytics-summary__item">
-                                        <span class="analytics-summary__value">$12,450</span>
-                                        <span class="analytics-summary__label">Total</span>
-                                    </div>
-                                    <div class="analytics-summary__item">
-                                        <span class="analytics-summary__value">+15%</span>
-                                        <span class="analytics-summary__label">Growth</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Cards -->
-                        <div class="dashboard-card dashboard-card--experience dashboard-card--animate-4">
-                            <div class="dashboard-card__header">
-                                <h3 class="dashboard-card__title">Your digital finances experience</h3>
-                            </div>
-                            <div class="dashboard-card__content">
-                                <div class="experience-cards">
-                                    <div class="experience-card">
-                                        <div class="experience-card__icon">
-                                            <i class="fas fa-wallet"></i>
-                                        </div>
-                                        <div class="experience-card__info">
-                                            <span class="experience-card__label">Savings</span>
-                                            <span class="experience-card__value">$8,240</span>
-                                        </div>
-                                    </div>
-                                    <div class="experience-card">
-                                        <div class="experience-card__icon">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                        <div class="experience-card__info">
-                                            <span class="experience-card__label">Investments</span>
-                                            <span class="experience-card__value">$15,680</span>
-                                        </div>
-                                    </div>
-                                    <div class="experience-card">
-                                        <div class="experience-card__icon">
-                                            <i class="fas fa-credit-card"></i>
-                                        </div>
-                                        <div class="experience-card__info">
-                                            <span class="experience-card__label">Credit</span>
-                                            <span class="experience-card__value">$2,450</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="action-buttons">
+                            <button class="action-btn"><i class="fas fa-paper-plane"></i> Send</button>
+                            <button class="action-btn"><i class="fas fa-download"></i> Request</button>
+                            <button class="action-btn"><i class="fas fa-ellipsis-h"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="assistant-section">
+            <div class="container">
+                <div class="assistant-grid">
+                    <div class="assistant-visual">
+                        <div class="visual-card">
+                            <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="card-info">
+                                <span class="label">Total Income</span>
+                                <span class="value">$323.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assistant-content">
+                        <span class="section-tag">FINANCIAL ASSISTANT</span>
+                        <h2>Your digital financial assistance</h2>
+                        <p>Create an account and start spending. We want to help you manage your money better so you can focus on what matters most. The app is designed to help you control of your finances.</p>
+                        <div class="store-buttons">
+                            <a href="#" class="store-btn">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <small>Download on the</small>
+                                    <span>App Store</span>
+                                </div>
+                            </a>
+                            <a href="#" class="store-btn">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <small>Get it on</small>
+                                    <span>Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="everything-section" id="about">
+            <div class="container">
+                <div class="everything-grid">
+                    <div class="everything-content">
+                        <span class="section-tag">MANAGE FINANCE</span>
+                        <h2>All and everything in one place</h2>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Organize and combine your bills.</li>
+                            <li><i class="fas fa-check"></i> Establishing an emergency fund for cover months of expenses.</li>
+                            <li><i class="fas fa-check"></i> Separating your bank accounts.</li>
+                            <li><i class="fas fa-check"></i> Creating a budget.</li>
+                        </ul>
+                        <a href="#" class="link-arrow">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="everything-visual">
+                        <div class="stat-card main-stat">
+                            <div class="stat-amount">$12,875 <span class="stat-currency">usd</span></div>
+                            <div class="stat-change positive">+4.35%</div>
+                        </div>
+                        <div class="stat-card secondary-stat">
+                            <div class="circle-progress">
+                                <span class="progress-value">87%</span>
+                            </div>
+                        </div>
+                        <div class="stat-card third-stat">
+                            <div class="mini-pie">64.3°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="invoicing-section">
+            <div class="container">
+                <div class="invoicing-grid">
+                    <div class="invoicing-visual">
+                        <div class="invoice-preview">
+                            <div class="invoice-row">
+                                <span class="invoice-label">Invoice</span>
+                                <span class="invoice-id">#INV-0012</span>
+                            </div>
+                            <div class="invoice-details">
+                                <div class="detail-row">
+                                    <span>Amount</span>
+                                    <span>$1,250.00</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Status</span>
+                                    <span class="status-paid">Paid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invoicing-content">
+                        <span class="section-tag">INVOICING TOOLS</span>
+                        <h2>Invoicing like you never had before</h2>
+                        <p>Create a simple invoice and send it instantly. Track your payments automatically and get notified when you get paid. Its the easiest way to get paid online and send invoices. A lot of features to organize your finances and invoices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions-section">
+            <div class="container">
+                <span class="section-tag center">WHAT WE PROVIDE</span>
+                <h2 class="section-title">Finance management solutions</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon"><i class="fas fa-wallet"></i></div>
+                        <h3>Multiple accounts</h3>
+                        <p>Add multiple bank account to manage your finance matters</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon"><i class="fas fa-file-invoice"></i></div>
+                        <h3>Saved Invoice Details</h3>
+                        <p>Never lost files any more because all files and invoices are stored</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Monthly Reports</h3>
+                        <p>Get automatically monthly reports of your financial</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon"><i class="fas fa-receipt"></i></div>
+                        <h3>Receipts</h3>
+                        <p>Receipts are automatically stored for your Purchases</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-section">
+            <div class="container">
+                <span class="section-tag center">HOW TO USE</span>
+                <h2 class="section-title">How it works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Download the App</h3>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-image">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Connect your bank account</h3>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Organize your finances</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <h2 class="section-title">Choose your best plan</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <span class="plan-tag">STARTER</span>
+                        <h3 class="plan-name">Free</h3>
+                        <a href="#" class="btn btn-outline">Sign up for free</a>
+                        <ul class="plan-features">
+                            <li class="included"><i class="fas fa-check"></i> 1 business account</li>
+                            <li class="included"><i class="fas fa-check"></i> 1 monthly report</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Key features</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Establishing an emergency fund for</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Separating your bank accounts.</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Creating a budget.</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured">
+                        <span class="plan-tag">PREMIUM</span>
+                        <div class="plan-price">
+                            <span class="price">$8.00</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Start 14-day trial</a>
+                        <ul class="plan-features">
+                            <li class="included"><i class="fas fa-check"></i> 1 business account</li>
+                            <li class="included"><i class="fas fa-check"></i> 1 monthly report</li>
+                            <li class="included"><i class="fas fa-check"></i> Key Features</li>
+                            <li class="included"><i class="fas fa-check"></i> Establishing an emergency fund for</li>
+                            <li class="included"><i class="fas fa-check"></i> Separating your bank accounts.</li>
+                            <li class="included"><i class="fas fa-check"></i> Creating a budget.</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <span class="plan-tag">ENTERPRISE</span>
+                        <h3 class="plan-name">Let's Talk</h3>
+                        <a href="#" class="btn btn-outline">Contact Us</a>
+                        <ul class="plan-features">
+                            <li class="included"><i class="fas fa-check"></i> 1 business account</li>
+                            <li class="included"><i class="fas fa-check"></i> 1 monthly report</li>
+                            <li class="included"><i class="fas fa-check"></i> Key Features</li>
+                            <li class="included"><i class="fas fa-check"></i> Establishing an emergency fund for</li>
+                            <li class="included"><i class="fas fa-check"></i> Separating your bank accounts.</li>
+                            <li class="included"><i class="fas fa-check"></i> Creating a budget.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <span class="section-tag center">OUR REVIEWS</span>
+                <h2 class="section-title">What world says about us</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p>"It's adaptable, it's exactly what you need! Definitely worth the $."</p>
+                    </div>
+                    <div class="review-card featured">
+                        <div class="review-brand">
+                            <span class="brand-icon">UP</span>
+                        </div>
+                        <p>"I can't say enough about it. Thanks for the great service. It's the perfect solution for our business. You've saved our business!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"></div>
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Haiden Brown</span>
+                                <span class="reviewer-role">Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p>"I'd be lost without it. It's amazing. Since I invested in it I've made over $1,000."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Get organize all of your finances</h2>
+                    <p>Start managing your finances today with our powerful tools</p>
+                </div>
+                <div class="cta-image">
+                    <div class="phone-mockup">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Prices Section -->
-    <section class="section section--prices" id="prices">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Simple, Transparent Pricing</h2>
-                <p class="section__description">Choose the plan that fits your needs</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Basic</h3>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount">0</span>
-                            <span class="pricing-card__period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-card__features">
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Basic financial tracking</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Up to 3 accounts</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Monthly reports</span>
-                        </li>
-                    </ul>
-                    <button class="pricing-card__button">Get Started</button>
-                </div>
-
-                <div class="pricing-card pricing-card--featured">
-                    <div class="pricing-card__badge">Popular</div>
-                    <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Pro</h3>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount">19</span>
-                            <span class="pricing-card__period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-card__features">
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced analytics</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Unlimited accounts</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Real-time insights</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Priority support</span>
-                        </li>
-                    </ul>
-                    <button class="pricing-card__button pricing-card__button--featured">Get Started</button>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-card__header">
-                        <h3 class="pricing-card__name">Enterprise</h3>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__amount">Custom</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-card__features">
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Everything in Pro</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Custom integrations</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Dedicated support</span>
-                        </li>
-                        <li class="pricing-card__feature">
-                            <i class="fas fa-check"></i>
-                            <span>SLA guarantee</span>
-                        </li>
-                    </ul>
-                    <button class="pricing-card__button">Contact Us</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stories Section -->
-    <section class="section section--stories" id="stories">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Success Stories</h2>
-                <p class="section__description">See how our platform helped others achieve financial freedom</p>
-            </div>
-            <div class="stories">
-                <div class="story-card">
-                    <div class="story-card__quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="story-card__text">
-                        "This platform transformed how I manage my finances. The intuitive interface 
-                        and powerful analytics helped me save over $10,000 in the first year!"
-                    </p>
-                    <div class="story-card__author">
-                        <div class="story-card__avatar">JD</div>
-                        <div class="story-card__info">
-                            <h4 class="story-card__name">Jessica Davis</h4>
-                            <span class="story-card__role">Small Business Owner</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="story-card">
-                    <div class="story-card__quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="story-card__text">
-                        "As a freelancer, tracking multiple income streams was always a challenge. 
-                        This tool made it effortless and I can now focus on growing my business."
-                    </p>
-                    <div class="story-card__author">
-                        <div class="story-card__avatar">MC</div>
-                        <div class="story-card__info">
-                            <h4 class="story-card__name">Michael Chen</h4>
-                            <span class="story-card__role">Freelance Developer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="story-card">
-                    <div class="story-card__quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="story-card__text">
-                        "The investment tracking feature is incredible. I finally have a clear 
-                        picture of my portfolio performance and can make informed decisions."
-                    </p>
-                    <div class="story-card__author">
-                        <div class="story-card__avatar">SP</div>
-                        <div class="story-card__info">
-                            <h4 class="story-card__name">Sarah Parker</h4>
-                            <span class="story-card__role">Investment Analyst</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <span class="logo__text">works</span>
-                    <p class="footer__tagline">Professional financial management made simple</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">●</span>
+                        <span class="logo-text">Logo</span>
+                    </a>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="footer__copyright">
-                    <p>&copy; 2025 Works. All rights reserved.</p>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="#">Invoice</a></li>
+                            <li><a href="#">Bank Transfer</a></li>
+                            <li><a href="#">Budget Maker</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Help Guides</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="footer-apps">
+                    <a href="#" class="app-btn"><i class="fab fa-apple"></i></a>
+                    <a href="#" class="app-btn"><i class="fab fa-google-play"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Finasafe. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

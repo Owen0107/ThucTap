@@ -1,7 +1,16 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useCallback } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
+  const { isAuthenticated, user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = useCallback(() => {
+    logout();
+    navigate('/');
+  }, [logout, navigate]);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -23,6 +32,20 @@ const Navbar = () => {
             <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
               Giới thiệu
             </NavLink>
+          </li>
+          <li className="nav-item nav-auth">
+            {isAuthenticated ? (
+              <div className="user-menu">
+                <span className="user-name">👤 {user?.name}</span>
+                <button onClick={handleLogout} className="logout-btn">
+                  Đăng xuất
+                </button>
+              </div>
+            ) : (
+              <NavLink to="/login" className="login-link">
+                Đăng nhập
+              </NavLink>
+            )}
           </li>
         </ul>
       </div>

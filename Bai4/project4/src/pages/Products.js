@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useCallback } from 'react';
 import products from '../data/products';
 import ProductCard from '../components/ProductCard';
 
@@ -6,6 +6,10 @@ const Products = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Tất cả');
   const [sortBy, setSortBy] = useState('default');
+  
+  // Sử dụng useRef để tham chiếu đến các elements
+  const searchInputRef = useRef(null);
+  const productsGridRef = useRef(null);
 
   const categories = ['Tất cả', ...new Set(products.map(p => p.category))];
 
@@ -43,6 +47,33 @@ const Products = () => {
     return result;
   }, [searchTerm, selectedCategory, sortBy]);
 
+  // Sử dụng useCallback để tối ưu hóa các hàm xử lý sự kiện
+  const handleSearchChange = useCallback((e) => {
+    setSearchTerm(e.target.value);
+  }, []);
+
+  const handleCategoryChange = useCallback((cat) => {
+    setSelectedCategory(cat);
+    // Scroll đến grid sản phẩm khi thay đổi category
+    productsGridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
+
+  const handleSortChange = useCallback((e) => {
+    setSortBy(e.target.value);
+  }, []);
+
+  const handleClearSearch = useCallback(() => {
+    setSearchTerm('');
+    searchInputRef.current?.focus();
+  }, []);
+
+  const handleResetFilters = useCallback(() => {
+    setSearchTerm('');
+    setSelectedCategory('Tất cả');
+    setSortBy('default');
+    searchInputRef.current?.focus();
+  }, []);
+
   return (
     <div className="products-page">
       <div className="container">
@@ -54,12 +85,18 @@ const Products = () => {
         <div className="filters-section">
           <div className="search-box">
             <input
+              ref={searchInputRef}
               type="text"
               placeholder="🔍 Tìm kiếm sản phẩm..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={handleSearchChange}
               className="search-input"
             />
+            {searchTerm && (
+              <button className="clear-search-btn" onClick={handleClearSearch}>
+                ✕
+              </button>
+            )}
           </div>
 
           <div className="filter-controls">
@@ -70,7 +107,7 @@ const Products = () => {
                   <button
                     key={cat}
                     className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory(cat)}
+                    onClick={() => handleCategoryChange(cat)}
                   >
                     {cat}
                   </button>
@@ -82,7 +119,7 @@ const Products = () => {
               <label>Sắp xếp:</label>
               <select
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
+                onChange={handleSortChange}
                 className="sort-select"
               >
                 <option value="default">Mặc định</option>
@@ -97,10 +134,15 @@ const Products = () => {
 
         <div className="results-info">
           <p>Hiển thị <strong>{filteredProducts.length}</strong> sản phẩm</p>
+          {(searchTerm || selectedCategory !== 'Tất cả' || sortBy !== 'default') && (
+            <button className="reset-filters-btn" onClick={handleResetFilters}>
+              🔄 Đặt lại bộ lọc
+            </button>
+          )}
         </div>
 
         {filteredProducts.length > 0 ? (
-          <div className="products-grid">
+          <div className="products-grid" ref={productsGridRef}>
             {filteredProducts.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}
@@ -110,6 +152,9 @@ const Products = () => {
             <div className="no-results-icon">🔍</div>
             <h3>Không tìm thấy sản phẩm</h3>
             <p>Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm</p>
+            <button className="reset-filters-btn" onClick={handleResetFilters}>
+              🔄 Đặt lại bộ lọc
+            </button>
           </div>
         )}
       </div>
