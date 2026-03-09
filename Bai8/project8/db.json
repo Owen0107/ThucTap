@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@company.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin",
+      "avatar": "https://ui-avatars.com/api/?name=Admin+User&background=0d9488&color=fff"
+    },
+    {
+      "id": "2",
+      "email": "user@company.com",
+      "password": "user123",
+      "name": "Normal User",
+      "role": "user",
+      "avatar": "https://ui-avatars.com/api/?name=Normal+User&background=14b8a6&color=fff"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "name": "Nguyen Van A",
+      "email": "nguyenvana@company.com",
+      "phone": "0901234567",
+      "department": "Engineering",
+      "position": "Senior Developer",
+      "salary": 25000000,
+      "status": "active",
+      "joinDate": "2022-01-15",
+      "avatar": "https://ui-avatars.com/api/?name=Nguyen+Van+A&background=0d9488&color=fff"
+    },
+    {
+      "id": "2",
+      "name": "Tran Thi B",
+      "email": "tranthib@company.com",
+      "phone": "0912345678",
+      "department": "Marketing",
+      "position": "Marketing Manager",
+      "salary": 30000000,
+      "status": "active",
+      "joinDate": "2021-06-20",
+      "avatar": "https://ui-avatars.com/api/?name=Tran+Thi+B&background=14b8a6&color=fff"
+    },
+    {
+      "id": "3",
+      "name": "Le Van C",
+      "email": "levanc@company.com",
+      "phone": "0923456789",
+      "department": "HR",
+      "position": "HR Specialist",
+      "salary": 18000000,
+      "status": "active",
+      "joinDate": "2023-03-10",
+      "avatar": "https://ui-avatars.com/api/?name=Le+Van+C&background=2dd4bf&color=fff"
+    },
+    {
+      "id": "4",
+      "name": "Pham Thi D",
+      "email": "phamthid@company.com",
+      "phone": "0934567890",
+      "department": "Finance",
+      "position": "Accountant",
+      "salary": 20000000,
+      "status": "inactive",
+      "joinDate": "2020-09-05",
+      "avatar": "https://ui-avatars.com/api/?name=Pham+Thi+D&background=5eead4&color=115e59"
+    },
+    {
+      "id": "5",
+      "name": "Hoang Van E",
+      "email": "hoangvane@company.com",
+      "phone": "0945678901",
+      "department": "Engineering",
+      "position": "Junior Developer",
+      "salary": 15000000,
+      "status": "active",
+      "joinDate": "2024-01-02",
+      "avatar": "https://ui-avatars.com/api/?name=Hoang+Van+E&background=99f6e4&color=115e59"
+    },
+    {
+      "id": "6",
+      "name": "Vu Thi F",
+      "email": "vuthif@company.com",
+      "phone": "0956789012",
+      "department": "Design",
+      "position": "UI/UX Designer",
+      "salary": 22000000,
+      "status": "active",
+      "joinDate": "2022-08-15",
+      "avatar": "https://ui-avatars.com/api/?name=Vu+Thi+F&background=0d9488&color=fff"
+    },
+    {
+      "id": "7",
+      "name": "Dang Van G",
+      "email": "dangvang@company.com",
+      "phone": "0967890123",
+      "department": "Engineering",
+      "position": "Tech Lead",
+      "salary": 35000000,
+      "status": "active",
+      "joinDate": "2019-05-20",
+      "avatar": "https://ui-avatars.com/api/?name=Dang+Van+G&background=14b8a6&color=fff"
+    },
+    {
+      "id": "8",
+      "name": "Bui Thi H",
+      "email": "buithih@company.com",
+      "phone": "0978901234",
+      "department": "Marketing",
+      "position": "Content Writer",
+      "salary": 16000000,
+      "status": "active",
+      "joinDate": "2023-07-01",
+      "avatar": "https://ui-avatars.com/api/?name=Bui+Thi+H&background=2dd4bf&color=fff"
+    },
+    {
+      "id": "9",
+      "name": "Ngo Van I",
+      "email": "ngovani@company.com",
+      "phone": "0989012345",
+      "department": "Sales",
+      "position": "Sales Executive",
+      "salary": 19000000,
+      "status": "active",
+      "joinDate": "2022-11-10",
+      "avatar": "https://ui-avatars.com/api/?name=Ngo+Van+I&background=5eead4&color=115e59"
+    },
+    {
+      "id": "10",
+      "name": "Trinh Thi K",
+      "email": "trinhthik@company.com",
+      "phone": "0990123456",
+      "department": "HR",
+      "position": "HR Manager",
+      "salary": 28000000,
+      "status": "active",
+      "joinDate": "2020-03-15",
+      "avatar": "https://ui-avatars.com/api/?name=Trinh+Thi+K&background=0d9488&color=fff"
+    },
+    {
+      "id": "11",
+      "name": "Ly Van L",
+      "email": "lyvanl@company.com",
+      "phone": "0901122334",
+      "department": "Engineering",
+      "position": "DevOps Engineer",
+      "salary": 27000000,
+      "status": "active",
+      "joinDate": "2021-09-01",
+      "avatar": "https://ui-avatars.com/api/?name=Ly+Van+L&background=14b8a6&color=fff"
+    },
+    {
+      "id": "12",
+      "name": "Mai Thi M",
+      "email": "maithim@company.com",
+      "phone": "0912233445",
+      "department": "Finance",
+      "position": "Financial Analyst",
+      "salary": 24000000,
+      "status": "inactive",
+      "joinDate": "2022-04-20",
+      "avatar": "https://ui-avatars.com/api/?name=Mai+Thi+M&background=2dd4bf&color=fff"
+    },
+    {
+      "id": "0b26",
+      "name": "Nguyễn Đặng Thành Thái",
+      "email": "symbiotezenus@gmail.com",
+      "phone": "0395431219",
+      "department": "Engineering",
+      "position": "đuawadw",
+      "salary": 21312421,
+      "status": "active",
+      "joinDate": "2026-03-06",
+      "avatar": "https://ui-avatars.com/api/?name=Nguy%E1%BB%85n%20%C4%90%E1%BA%B7ng%20Th%C3%A0nh%20Th%C3%A1i&background=0d9488&color=fff"
+    },
+    {
+      "id": "5985",
+      "name": "Nguyễn Đặng Thành Thái",
+      "email": "symbiotezenus@gmail.com",
+      "phone": "0395431219",
+      "department": "Engineering",
+      "position": "3estesfaw",
+      "salary": 43625555,
+      "status": "active",
+      "joinDate": "2026-03-11",
+      "avatar": "https://ui-avatars.com/api/?name=Nguy%E1%BB%85n%20%C4%90%E1%BA%B7ng%20Th%C3%A0nh%20Th%C3%A1i&background=0d9488&color=fff"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Engineering",
+      "description": "Software Development Team"
+    },
+    {
+      "id": "2",
+      "name": "Marketing",
+      "description": "Marketing and Communications"
+    },
+    {
+      "id": "3",
+      "name": "HR",
+      "description": "Human Resources"
+    },
+    {
+      "id": "4",
+      "name": "Finance",
+      "description": "Finance and Accounting"
+    },
+    {
+      "id": "5",
+      "name": "Design",
+      "description": "UI/UX and Graphic Design"
+    },
+    {
+      "id": "6",
+      "name": "Sales",
+      "description": "Sales and Business Development"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
